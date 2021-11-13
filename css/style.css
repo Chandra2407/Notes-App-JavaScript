@@ -127,7 +127,7 @@ footer {
     margin: auto;
     border-radius: 0.5rem;
     justify-content: space-between;
-    padding: 1.2rem;
+    padding: 1.2rem 0.6rem 1.2rem 0.8rem;
 }
 
 .add-notes input {
@@ -139,9 +139,8 @@ footer {
 }
 
 .save-button,.add-button {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     cursor: pointer;
-    margin: 0 0.7rem;
     transition: all 0.3s ease;
 }
 
