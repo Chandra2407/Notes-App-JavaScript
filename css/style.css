@@ -141,7 +141,7 @@ footer {
 .save-button,.add-button {
     font-size: 1.9rem;
     cursor: pointer;
-    margin: 0 1.2rem;
+    margin: 0 0.7rem;
     transition: all 0.3s ease;
 }
 
