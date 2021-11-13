@@ -16,7 +16,7 @@ header {
     border-bottom: 1px solid rgba(128, 128, 128, 0.377);
     display: flex;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: white;
 }
 
@@ -41,6 +41,7 @@ header h1:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     margin: 1rem;
 }
 
