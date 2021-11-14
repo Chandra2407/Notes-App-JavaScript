@@ -69,11 +69,20 @@ function deleteCheck(e){
     }    
 }
 function editCheck(e){
+    let todos;
+    if (localStorage.getItem("todos") === null) {
+        todos = [];
+    } else {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
     const item = e.target;
     if(item.classList[0]=="edit-button"){
-      addInput.value = item.parentElement.children[0].innerHTML;  
+      addInput.value = item.parentElement.children[0].innerText;
+      const index=item.parentElement.children[0].innerText;
       saveButton.onclick = function() {
         item.parentElement.children[0].innerText =addInput.value;
+        todos[todos.indexOf(index)] =addInput.value;
+        localStorage.setItem("todos",JSON.stringify(todos));
         addInput.value="";
       }
     }  
